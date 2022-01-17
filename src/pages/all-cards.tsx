@@ -1,10 +1,11 @@
+import type { NextPage } from 'next'
 import { cards } from "../utils/cards";
 import Card from "../components/Card";
 import HomeBtn from "../components/btns/HomeBtn";
 
 const cards_array = Object.entries(cards);
 
-export default function AllCards() {
+const AllCards: NextPage = () => {
   return (
     <div>
       <HomeBtn />
@@ -14,3 +15,6 @@ export default function AllCards() {
     </div>
   );
 }
+
+export default AllCards
+
