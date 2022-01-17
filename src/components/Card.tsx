@@ -3,7 +3,7 @@ interface Card {
     name: string;
     emoji: string;
     powers?: string[];
-    team: "Werewolves" | "Villagers";
+    team: string;
   };
 }
 
